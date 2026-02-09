@@ -55,11 +55,21 @@ Al ser estática, puedes subirla directamente a cualquier servicio de hosting gr
 ```
 
 ---
+## 📂 Estructura del Proyecto
 
-## 📂 Estructura
+```text
+amibotWebApp/
+├── assets/     # Imágenes e iconos
+├── css/        # Hojas de estilo
+├── js/         # Scripts de interacción
+├── index.html  # Landing Page principal
+└── README.md   # Documentación
+```
 
+---
 
 ## 🤝 Contribución
+
 ### ¡Tu ayuda es bienvenida para hacer este Gateway más robusto!
 
 1. **Haz un Fork del repositorio.**
@@ -72,9 +82,12 @@ Al ser estática, puedes subirla directamente a cualquier servicio de hosting gr
 
 5. **Abre un Pull Request.**
 
+---
 
 ## 📝 Licencia
 
 ```
 Este proyecto está bajo la licencia ISC. Siéntete libre de usarlo y adaptarlo a tu infraestructura.
-``` 
+```
+
+---
