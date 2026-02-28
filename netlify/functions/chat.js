@@ -6,25 +6,26 @@ exports.handler = async (event) => {
     try {
         const { message } = JSON.parse(event.body);
 
-        console.log('Key:', process.env.ANTHROPIC_API_KEY ? 'encontrada' : 'NO ENCONTRADA');
+        console.log('Key:', process.env.GROQ_API_KEY ? 'encontrada' : 'NO ENCONTRADA');
 
-        const response = await fetch('https://api.anthropic.com/v1/messages', {
+        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'x-api-key': process.env.ANTHROPIC_API_KEY,
-                'anthropic-version': '2023-06-01'
+                'Authorization': `Bearer ${process.env.GROQ_API_KEY}`
             },
             body: JSON.stringify({
-                model: 'claude-haiku-4-5-20251001',
+                model: 'llama-3.1-8b-instant',
                 max_tokens: 512,
-                system: SYSTEM_CONTEXT,
-                messages: [{ role: 'user', content: message }]
+                messages: [
+                    { role: 'system', content: SYSTEM_CONTEXT },
+                    { role: 'user', content: message }
+                ]
             })
         });
 
-        console.log('Status API:', response.status);
         const data = await response.json();
+        console.log('Status API:', response.status);
         console.log('Respuesta API:', JSON.stringify(data));
 
         if (data.error) {
@@ -35,7 +36,8 @@ exports.handler = async (event) => {
             };
         }
 
-        const reply = data.content?.[0]?.text || 'No pude responder eso.';
+        const reply = data.choices?.[0]?.message?.content || 'No pude responder eso.';
+
         return {
             statusCode: 200,
             headers: { 'Content-Type': 'application/json' },

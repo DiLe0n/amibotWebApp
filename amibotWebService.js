@@ -1,32 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ── CURSOR ───────────────────────────────────
-    const cursor = document.getElementById('cursor');
-    const follower = document.getElementById('cursorFollower');
-    let mx = 0, my = 0, fx = 0, fy = 0;
-    document.addEventListener('mousemove', e => {
-        mx = e.clientX; my = e.clientY;
-        cursor.style.left = mx + 'px';
-        cursor.style.top = my + 'px';
-    });
-    (function loop() {
-        fx += (mx - fx) * 0.12;
-        fy += (my - fy) * 0.12;
-        follower.style.left = fx + 'px';
-        follower.style.top = fy + 'px';
-        requestAnimationFrame(loop);
-    })();
-    document.querySelectorAll('a,button,.card,.price-card,.bot-strip').forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'translate(-50%,-50%) scale(1.8)';
-            follower.style.transform = 'translate(-50%,-50%) scale(1.4)';
-        });
-        el.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'translate(-50%,-50%) scale(1)';
-            follower.style.transform = 'translate(-50%,-50%) scale(1)';
-        });
-    });
-
     // ── NAVBAR SCROLL ────────────────────────────
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
