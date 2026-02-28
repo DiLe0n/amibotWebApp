@@ -1,121 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amibot - Soluciones Web & Digitales</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Amibot - Tu Página Web, Fácil y Rápido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">Amibot.</div>
-        <div class="nav-links">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#portafolio">Planes</a>
-            <a href="amibotWhatsApp/botservice.html">WhatsApp Bot</a>
+    <div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+<div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+</div>
+<div class="grid-lines"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="logo">Amibot.</div>
+    <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Qué ofrecemos</a>
+        <a href="#precios">Precios</a>
+    </div>
+    <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema">☀️</button>
+        <a href="#contacto" class="btn-nav">Cotizar &rarr;</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="inicio">
+    <div class="hero-text">
+        <div class="hero-badge"><span class="dot"></span> Tomando nuevos proyectos ahora</div>
+        <h1>Tu negocio merece estar <span class="gradient-text">en internet.</span></h1>
+        <p>Creamos páginas web bonitas, rápidas y fáciles de encontrar para emprendedores y negocios como el tuyo. Sin complicaciones, a precios que tienen sentido.</p>
+        <div class="hero-cta">
+            <a href="#contacto" class="btn-primary">Quiero mi página &rarr;</a>
+            <a href="#servicios" class="btn-ghost">Ver qué ofrecemos <span class="arrow">↓</span></a>
         </div>
-        <a href="#contacto" class="btn">Cotizar Web</a>
-    </nav>
-
-    <header id="inicio">
-        <div class="hero-text">
-            <h1>Tu negocio merece estar <span class="gradient-text">online.</span></h1>
-            <p>Diseñamos páginas web modernas, rápidas y seguras para emprendedores y negocios locales. La calidad de una agencia, a precios accesibles.</p>
-            <a href="#contacto" class="btn">Empezar Ahora &rarr;</a>
-        </div>
-        <div class="hero-img">
-            <img src="img/AmibotWebSite.jpg" alt="Diseño Web Moderno">
-        </div>
-    </header>
-
-    <section id="servicios" class="services">
-        <h2>Impulsamos tu Marca</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="icon">🚀</div>
-                <h3>Landing Pages</h3>
-                <p>Páginas de alto impacto diseñadas para convertir visitantes en clientes. Ideales para promociones o servicios específicos.</p>
+        <div class="hero-stats">
+            <div>
+                <div class="stat-num">50+</div>
+                <div class="stat-label">Proyectos entregados</div>
             </div>
-            <div class="card">
-                <div class="icon">📱</div>
-                <h3>Diseño Responsivo</h3>
-                <p>Tu sitio se verá perfecto en celulares, tablets y computadoras. Adaptamos el contenido a cualquier pantalla.</p>
+            <div>
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Se ve bien en celular</div>
             </div>
-            <div class="card">
-                <div class="icon">☁️</div>
-                <h3>Hosting Azure</h3>
-                <p>Alojamiento de clase mundial. Tus clientes disfrutarán de una página rápida y siempre disponible.</p>
+            <div>
+                <div class="stat-num">24h</div>
+                <div class="stat-label">Respuesta de soporte</div>
             </div>
         </div>
-    </section>
-
-    <section id="precios" class="pricing">
-        <h2>Planes Flexibles</h2>
-        <p style="color: var(--text-gray);">Elige la opción que mejor se adapte al crecimiento de tu negocio.</p>
-        
-        <div class="pricing-grid">
-            
-            <div class="price-card">
-                <h3>Básico</h3>
-                <div class="price">$49<span class="period">/mes</span></div>
-                <ul class="features">
-                    <li>Página Web Sencilla</li>
-                    <li>Hosting Incluido</li>
-                    <li>Diseño Responsivo (Móvil)</li>
-                    <li>Soporte por WhatsApp</li>
-                </ul>
-                <a href="#contacto" class="btn-outline">Elegir Básico</a>
-            </div>
-
-            <div class="price-card popular">
-                <span class="badge">Más Popular</span>
-                <h3>Pro + IA</h3>
-                <div class="price">$89<span class="period">/mes</span></div>
-                <ul class="features">
-                    <li>Todo lo del plan Básico</li>
-                    <li>Diseño Premium Personalizado</li>
-                    <li><strong>Integración con IA</strong> (Chatbot)</li>
-                    <li>Botón de WhatsApp Flotante</li>
-                    <li>SEO Básico (Google Maps)</li>
-                    <li>Actualizaciones mensuales</li>
-                </ul>
-                <a href="#contacto" class="btn-full">Elegir Pro</a>
-            </div>
-
-            <div class="price-card">
-                <h3>Empresarial</h3>
-                <div class="price">Cotizar</div>
-                <ul class="features">
-                    <li>Sitio Web a la medida</li>
-                    <li>Múltiples páginas internas</li>
-                    <li>Integración de Pagos</li>
-                    <li>Automatización de procesos</li>
-                    <li>Soporte Prioritario 24/7</li>
-                </ul>
-                <a href="#contacto" class="btn-outline">Contactar Ventas</a>
-            </div>
-
+    </div>
+    <div class="hero-img">
+        <div class="hero-img-glow"></div>
+        <div class="hero-img-wrap">
+            <img src="img/amibot_logo_nuevo.jpeg" alt="Ejemplo de página web hecha por Amibot">
         </div>
-    </section>
-
-    <footer id="contacto">
-        <h2 style="margin-bottom: 1rem;">¿Listo para lanzar tu web?</h2>
-        <p style="margin-bottom: 2rem; color: var(--text-gray);">Contáctanos hoy mismo y digitaliza tu proyecto con Amibot.</p>
-        
-        <a href="https://wa.me/523121931908" class="btn">
-            Contactar por WhatsApp
-        </a>
-
-        <a href="mailto:rvargas2d9@gmail.com" id="emailBtn" class="btn-email">
-            Contacto por Correo
-        </a>
-        
-        <div style="margin-top: 3rem; font-size: 0.9rem; color: var(--text-gray);">
-            &copy; 2026 Amibot. Todos los derechos reservados.
+        <div class="float-tag ft-1">
+            <span class="fi">🚀</span>
+            <div><div>Lista en poco tiempo</div><small>Entrega garantizada</small></div>
         </div>
-    </footer>
+        <div class="float-tag ft-2">
+            <span class="fi">🌍</span>
+            <div><div>Accesible en todo el mundo</div><small>Rápida desde cualquier lugar</small></div>
+        </div>
+    </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+    <div class="ticker">
+        <div class="ticker-item"><span class="ti">✨</span> Páginas que sí se ven bien</div>
+        <div class="ticker-item"><span class="ti">📱</span> Funciona en celular y computadora</div>
+        <div class="ticker-item"><span class="ti">🌍</span> Rápida en todo el mundo</div>
+        <div class="ticker-item"><span class="ti">🤖</span> Asistente virtual con IA</div>
+        <div class="ticker-item"><span class="ti">🔒</span> Conexión segura incluida</div>
+        <div class="ticker-item"><span class="ti">📍</span> Integracion con Google Maps</div>
+        <div class="ticker-item"><span class="ti">⚡</span> Carga muy rápido</div>
+        <div class="ticker-item"><span class="ti">💬</span> Soporte por WhatsApp</div>
+        <div class="ticker-item"><span class="ti">✨</span> Páginas que sí se ven bien</div>
+        <div class="ticker-item"><span class="ti">📱</span> Funciona en celular y computadora</div>
+        <div class="ticker-item"><span class="ti">🌍</span> Rápida en todo el mundo</div>
+        <div class="ticker-item"><span class="ti">🤖</span> Asistente virtual con IA</div>
+        <div class="ticker-item"><span class="ti">🔒</span> Conexión segura incluida</div>
+        <div class="ticker-item"><span class="ti">📍</span> Integracion con Google Maps</div>
+        <div class="ticker-item"><span class="ti">⚡</span> Carga muy rápido</div>
+        <div class="ticker-item"><span class="ti">💬</span> Soporte por WhatsApp</div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section id="servicios" class="services">
+    <div class="services-head">
+        <div>
+            <div class="section-label">Lo que hacemos</div>
+            <h2 class="section-title reveal">Todo para que<br>te vean en línea</h2>
+        </div>
+        <p class="section-sub reveal d1">De la idea a la pantalla: diseñamos, publicamos y te damos soporte para que tú solo te preocupes de tu negocio.</p>
+    </div>
+    <div class="services-grid">
+        <div class="card reveal">
+            <div class="card-icon">🎯</div>
+            <h3>Página de Presentación</h3>
+            <p>Una página atractiva que les cuenta a tus clientes quién eres, qué haces y cómo contactarte. Simple y efectiva.</p>
+        </div>
+        <div class="card reveal d1">
+            <div class="card-icon">📱</div>
+            <h3>Se ve bien en cualquier pantalla</h3>
+            <p>Tu página se ajusta sola al celular, tablet o computadora. Tus clientes siempre la van a ver perfecta.</p>
+        </div>
+        <div class="card reveal d2">
+            <div class="card-icon">🌍</div>
+            <h3>Rápida y disponible siempre</h3>
+            <p>Tu página vive en servidores potentes que la hacen cargar velozmente desde cualquier parte del mundo, las 24 horas.</p>
+        </div>
+        <div class="card reveal">
+            <div class="card-icon">🤖</div>
+            <h3>Asistente Virtual con IA</h3>
+            <p>Un asistente inteligente que responde las preguntas de tus clientes solito, aunque tú estés ocupado o dormido.</p>
+        </div>
+        <div class="card reveal d1">
+            <div class="card-icon">📍</div>
+            <h3>Integración con Google Maps</h3>
+            <p>Ponemos tu negocio en el mapa de Google para que la gente que busca lo que ofreces te encuentre fácilmente.</p>
+        </div>
+        <div class="card reveal d2">
+            <div class="card-icon">🔄</div>
+            <h3>Cambios sin drama</h3>
+            <p>¿Cambiaron tus precios, horarios o servicios? Te actualizamos la página sin costo extra con tu plan mensual.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHATSAPP BOT STRIP -->
+<div class="bot-strip reveal">
+    <div class="bot-strip-text">
+        <h3>💬 ¿También quieres un asistente en WhatsApp?</h3>
+        <p>Tenemos un servicio especial para poner un bot en tu número de WhatsApp que atienda a tus clientes solo.</p>
+    </div>
+    <a href="amibotWhatsApp/botservice.html" class="btn-wa-strip">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Ver servicio de WhatsApp Bot
+    </a>
+</div>
+
+<!-- PRICING -->
+<section id="precios" class="pricing">
+    <div class="pricing-head reveal">
+        <div class="section-label">Precios</div>
+        <h2 class="section-title">Sin letras chiquitas</h2>
+        <p class="section-sub">Planes claros para que elijas lo que necesitas hoy, y crezcas cuando quieras.</p>
+    </div>
+    <div class="pricing-grid">
+        <div class="price-card reveal">
+            <h3>Para empezar</h3>
+            <div class="price">$49<span class="period">/mes</span></div>
+            <ul class="features">
+                <li>Tu página web lista y publicada</li>
+                <li>Servidor incluido</li>
+                <li>Se ve bien en el celular</li>
+                <li>Soporte por WhatsApp</li>
+            </ul>
+            <a href="#contacto" class="btn-outline">Quiero este plan</a>
+        </div>
+        <div class="price-card popular reveal d1">
+            <span class="badge">⭐ El favorito</span>
+            <h3>Pro + Asistente IA</h3>
+            <div class="price">$89<span class="period">/mes</span></div>
+            <ul class="features">
+                <li>Todo lo del plan anterior</li>
+                <li>Diseño único para tu marca</li>
+                <li><strong>Asistente virtual con IA</strong></li>
+                <li>Botón de WhatsApp en tu página</li>
+                <li>Tu negocio en Google Maps</li>
+                <li>Cambios mensuales incluidos</li>
+            </ul>
+            <a href="#contacto" class="btn-full">Quiero el Pro</a>
+        </div>
+        <div class="price-card reveal d2">
+            <h3>Para tu empresa</h3>
+            <div class="price">A cotizar</div>
+            <ul class="features">
+                <li>Página hecha completamente a tu medida</li>
+                <li>Varias secciones y páginas internas</li>
+                <li>Automatización de tareas</li>
+                <li>Soporte prioritario 24/7</li>
+            </ul>
+            <a href="#contacto" class="btn-outline">Hablemos de tu proyecto</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contacto">
+    <div class="footer-inner">
+        <div class="footer-cta reveal">
+            <h2>¿Listo para que te vean<br>en internet?</h2>
+            <p>Escríbenos hoy y en menos de lo que crees tu negocio ya tiene presencia en línea.</p>
+            <div class="contact-btns">
+                <a href="https://wa.me/523121067347" class="btn-wa" target="_blank" rel="noopener">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Escríbenos por WhatsApp
+                </a>
+                <a href="#" id="emailBtn">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+                    Mándanos un correo
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">Amibot.</div>
+            <div>&copy; 2026 Amibot. Todos los derechos reservados.</div>
+        </div>
+    </div>
+</footer>
+
+<!-- CHATBOT FLOTANTE -->
+<div id="chat-bubble" onclick="toggleChat()">💬</div>
+
+<div id="chat-window">
+  <div id="chat-header">
+    <span>🤖 Asistente Amibot</span>
+    <button onclick="toggleChat()">✕</button>
+  </div>
+  <div id="chat-messages"></div>
+  <div id="chat-input-area">
+    <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." onkeydown="if(event.key==='Enter') sendMessage()">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
 
     <script src="amibotWebService.js"></script>
 

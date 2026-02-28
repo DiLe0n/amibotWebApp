@@ -1,0 +1,21 @@
+{
+  "name": "amibotwebapp",
+  "version": "1.0.0",
+  "description": "¡Bienvenido a **Amibot WebApp**! Esta es una plantilla web estática, moderna y profesional, diseñada para servir como punto de partida (Landing Page) para cualquier servicio de suscripción, bot, SaaS o sistema de membresías.",
+  "main": "amibotWebService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiLe0n/amibotWebApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DiLe0n/amibotWebApp/issues"
+  },
+  "homepage": "https://github.com/DiLe0n/amibotWebApp#readme"
+}
