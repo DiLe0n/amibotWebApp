@@ -426,22 +426,22 @@
         /* ─── FOOTER ─────────────────────────────── */
         footer { padding: 6rem 5% 3rem; position: relative; z-index: 1; }
         .footer-inner { max-width: 860px; margin: 0 auto; }
-        .footer-cta {
+        .footer-contact {
             text-align: center; padding: 4rem 3rem;
             background: var(--surface); border: 1px solid var(--border);
             border-radius: 28px; position: relative; overflow: hidden; margin-bottom: 3rem;
         }
-        .footer-cta::before {
+        .footer-contact::before {
             content: ''; position: absolute; top:-60%; left:50%;
             transform: translateX(-50%); width:500px; height:500px;
             background: radial-gradient(circle, rgba(59,130,246,0.1), transparent 65%);
             pointer-events: none;
         }
-        .footer-cta h2 {
+        .footer-contact h2 {
             font-family: 'Nunito', sans-serif; font-size: 2.4rem; font-weight: 900;
             letter-spacing: -1.2px; margin-bottom: 0.8rem; position: relative;
         }
-        .footer-cta > p {
+        .footer-contact > p {
             color: var(--text-muted); margin-bottom: 2.2rem; font-size: 1rem; position: relative;
         }
         .contact-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; }
@@ -492,8 +492,8 @@
             .pricing-grid { grid-template-columns:1fr; max-width:420px; margin:0 auto; }
             .bot-strip { flex-direction:column; text-align:center; margin-bottom:4rem; }
             .footer-bottom { flex-direction:column; gap:0.5rem; text-align:center; }
-            .footer-cta h2 { font-size:1.9rem; }
-            .footer-cta { padding: 2.5rem 1.5rem; }
+            .footer-contact h2 { font-size:1.9rem; }
+            .footer-contact { padding: 2.5rem 1.5rem; }
         }
 
         #chat-bubble {
