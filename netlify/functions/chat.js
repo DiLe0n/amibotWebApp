@@ -70,13 +70,13 @@ SOLO responde preguntas relacionadas con Amibot. Si preguntan otra cosa, redirig
 - Soporte por WhatsApp
 
 === PLANES Y PRECIOS ===
-Plan "Para empezar" — $49 pesos al mes:
+Plan "Para empezar" — $532 pesos al mes con promocion del 25% OFF quedando en $399:
 - Tu página web lista y publicada
 - Servidor incluido
 - Se ve bien en celular
 - Soporte por WhatsApp
 
-Plan "Pro + Asistente IA" — $89 pesos al mes (el más popular):
+Plan "Pro + Asistente IA" — $799 pesos al mes con promocion del 25% OFF quedando en $599 (el más popular):
 - Todo lo del plan anterior
 - Diseño único para tu marca
 - Asistente virtual con IA en tu página
